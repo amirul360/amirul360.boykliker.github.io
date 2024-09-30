@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boyclicker</title>
+   
+</head>
+<style>
+    body{
+        display: flex;
+    }
+    div{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    }
+</style>
+<body>
+    <div>
+        <img id="myImage" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FoPzkqtPpEMo%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=41e4366c8a8866da3b53275722d117f98bd4f18ad045c6c06a5b3d3f9603e5e6&ipo=images" alt="First Image" width="300" height="200">
+        <audio id="meow">
+            <source src="meowing v2.mp3" type="audio/ogg">
+           
+            
+          </audio>
+        <caption>klik meh</caption>
+        <p1 ><a href="https://youtu.be/GtL1huin9EE?si=hJlrEhEcsiHnJoZC">klik say gex</a> </p1>
+    </div>
+
+</img>
+</body>
+
+<script>
+
+document.getElementById("myImage").addEventListener("click", function() {
+    var img = document.getElementById("myImage");
+
+    // Change the image to a new one
+    img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0dd0b8x-ZGV4ivsNLwh97FMR6jlmX_NqPmw&s";
+    var meow = document.getElementById("meow");
+    meow.play();
+    // After 1 second, change it back to the original image
+    setTimeout(function() {
+        
+        img.src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FoPzkqtPpEMo%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=41e4366c8a8866da3b53275722d117f98bd4f18ad045c6c06a5b3d3f9603e5e6&ipo=images";
+    }, 300);
+});
+
+    </script>
+</html>
